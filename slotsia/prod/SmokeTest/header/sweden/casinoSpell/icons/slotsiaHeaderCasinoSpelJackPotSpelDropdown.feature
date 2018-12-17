@@ -11,20 +11,19 @@ Feature: JackPotSpel icons feature
   # ----------------------------------------------------------------------------------------------- #
 
   Scenario: Click on JackPotDropdown icons
-    Given I open website "slotsiacom-stg.catena.media/"
-    And url contains "stg.catena.media"
+    Given I open website "https://slotsia.com/"
 
-    Then I hover over by XPATH "//*[@id='menu-item-3844']/a"
-    And I hover over by XPATH "//*[@id='menu-item-3895']/a"
-    And I click by XPATH "//*[@id='menu-item-3934-post-2938']/a"
+    Then I hover over by XPATH "*//SPAN[contains(text(), 'CASINO SPEL')]"
+    And I hover over by XPATH "*//SPAN[contains()text(), 'JACKPOTSPELL']"
+    And I click by XPATH "*//SPAN[contains(text(), 'Cosmic Fortune')]"
     And url contains "cosmic-fortune"
 
-    Then I hover over by XPATH "//*[@id='menu-item-3844']/a"
-    And I hover over by XPATH "//*[@id='menu-item-3895']/a"
-    And I click by XPATH "//*[@id='menu-item-3934-post-3310']/a"
+    Then I hover over by XPATH "*//SPAN[contains()text(), 'CASINO SPEL')]"
+    And I hover over by XPATH "*//SPAN[contains()text(), 'JACKPOTSPELL']"
+    And I click by XPATH "*//SPAN[contains(text(), 'Mega Fortune')]"
     And url contains "mega-fortune"
 
-    Then I hover over by XPATH "//*[@id='menu-item-3844']/a"
-    And I hover over by XPATH "//*[@id='menu-item-3895']/a"
-    And I click by XPATH "//*[@id='menu-item-3934-post-4176']/a/span"
+    Then I hover over by XPATH "*//SPAN[contains(text(), 'CASINO SPEL')]"
+    And I hover over by XPATH "*//SPAN[contains()text(), 'JACKPOTSPELL']"
+    And I click by XPATH "*//SPAN[contains(text(), 'Mega Moolah')]"
     And url contains "mega-moolah"

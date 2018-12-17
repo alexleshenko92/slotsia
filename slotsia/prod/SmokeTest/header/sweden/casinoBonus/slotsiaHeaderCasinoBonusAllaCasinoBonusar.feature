@@ -13,5 +13,5 @@ Feature: AllaCasinoBonus button
   Scenario: Click on AllaCasinoButton on header menu
     Given I open website "https://slotsia.com/"
     Then I hover over by XPATH "*//SPAN[contains(text(), 'CASINO BONUS')]"
-    And I click by XPATH "//*[@id='menu-item-3854']/a"
+    And I click by XPATH "*//SPAN[contains(text(), 'CASINO BONUS')]"
     And url contains "casino-bonus"

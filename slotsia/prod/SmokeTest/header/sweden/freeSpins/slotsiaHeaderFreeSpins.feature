@@ -1,4 +1,4 @@
-@slotsiacomSTG
+@PROD
 Feature: FreeSpinsButtom
 
   Background: Example of modelling a page with BDD - https://www.test.com/

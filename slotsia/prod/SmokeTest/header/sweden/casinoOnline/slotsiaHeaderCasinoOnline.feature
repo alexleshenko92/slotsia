@@ -13,5 +13,5 @@ Feature: Casino online button in header
   Scenario: Click on Casino Online button
     Given I open website "https://slotsia.com/"
 
-    Then I click by XPATH "//*[@id='menu-item-3841']/a/span"
+    Then I click by XPATH "*//SPAN[contains(text(), 'CASINO ONLINE')]"
     And url contains "casino-online"

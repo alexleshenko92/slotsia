@@ -12,8 +12,7 @@ Feature: Info button
 
   #Need to create common method for example pre-conditions like @Before
   Scenario: Click on Info
-    Given I open website "https://demo:welcometocatena@slotsiacom-stg.catena.media/"
-    And url contains "stg.catena.media"
+    Given I open website "https://slotsia.com/"
 
-    Then I click by XPATH "//*[@id='menu-item-4674']/a"
+    Then I click by XPATH "*//SPAN[contains(text(), 'INFO')]"
     And url contains "om-oss"

@@ -13,5 +13,5 @@ Feature: High Roller Bonus button
   Scenario: Click on High Roller Bonus on header menu
     Given I open website "https://slotsia.com/"
     Then I hover over by XPATH "*//SPAN[contains(text(), 'CASINO BONUS')]"
-    Then I click by XPATH "//*[@id='menu-item-7035']/a/span"
+    Then I click by XPATH "*//SPAN[contains(text(), 'HIGH ROLLER BONUS')]"
     And url contains "high-roller-bonus"

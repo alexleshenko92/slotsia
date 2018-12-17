@@ -1,4 +1,4 @@
-@slotsiacomSTG
+@PROD
 Feature: Info Guider feature
 
   Background: Example of modelling a page with BDD - https://www.test.com/
@@ -11,9 +11,8 @@ Feature: Info Guider feature
   # ----------------------------------------------------------------------------------------------- #
 
   Scenario: Click on Guider icons
-    Given I open website "https://demo:welcometocatena@slotsiacom-stg.catena.media/"
-    And url contains "stg.catena.media"
-    
-    Then I hover over by XPATH "//*[@id='menu-item-4674']/a"
-    Then I click by XPATH "//*[@id='menu-item-16190']/a"
+    Given I open website "https://slotsia.com/"
+
+    Then I hover over by XPATH "*//SPAN[contains(text(), ' INFO')]"
+    Then I click by XPATH "*//SPAN[contains(text(), 'CASINO UTAN KONTO')]"
     And url contains "casino-utan-konto"

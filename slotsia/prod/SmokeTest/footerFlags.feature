@@ -6,6 +6,7 @@ Feature: Flags in the footer feature
     And I hover over by XPATH "//*[@class='country se']"
     
     Then I click by XPATH "//*[@class='country fi']"
+    And I wait "5000" ms
     And url contains "fi"
     And text displays "Ilmaiskierroksia & uusia nettikasinoita 2018 – Slotsia"
 
