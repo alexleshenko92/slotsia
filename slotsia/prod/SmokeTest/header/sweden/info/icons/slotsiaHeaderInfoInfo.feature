@@ -11,8 +11,7 @@ Feature: Info icons feature
   # ----------------------------------------------------------------------------------------------- #
 
   Scenario: Click on Info icons
-    Given I open website "https://demo:welcometocatena@slotsiacom-stg.catena.media/"
-    And url contains "stg.catena.media"
+    Given I open website "slotsia.com"
 
     Then I hover over by XPATH "//*[@id='menu-item-4674']/a"
     Then I hover over by XPATH "//*[@id='menu-item-9710']/a"

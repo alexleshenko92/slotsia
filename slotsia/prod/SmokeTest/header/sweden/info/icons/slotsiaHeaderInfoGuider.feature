@@ -13,9 +13,9 @@ Feature: Info Guider feature
   Scenario: Click on Guider icons
     Given I open website "https://slotsia.com"
 
-    Then I hover over by XPATH "*//SPAN[contains(text(), ' INFO')]"
-    Then I hover over by XPATH "*//SPAN[contains(text(), ' GUIDER')]"
-    Then I click by XPATH "*//A[@href = 'https://slotsia.com/50-kr-gratis-casino']"
+    Then I hover over by XPATH "//*[@id='menu-item-4674']/a"
+    And I hover over by XPATH "//*[@id='menu-item-4681']/a"
+    Then I click by XPATH "//*[@id='menu-item-4742']/a"
     And url contains "50-kr-gratis-casino"
 
     Then I hover over by XPATH "//*[@id='menu-item-4674']/a"
